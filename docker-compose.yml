@@ -4,15 +4,15 @@ services:
   drone:
     image: drone/drone:2
     ports:
-      - "8080:80"
+      - "9090:80"
     volumes:
       - drone-data:/data
     restart: always
     environment:
       - DRONE_OPEN=true
-      - DRONE_HOST=http://localhost:8080
+      - DRONE_HOST=http://localhost:9090
       - DRONE_SERVER_PROTO=http
-      - DRONE_SERVER_HOST=localhost:8080
+      - DRONE_SERVER_HOST=localhost:9090
       - DRONE_RPC_SECRET=supersecret
 
   runner:
