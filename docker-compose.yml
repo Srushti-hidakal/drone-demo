@@ -9,8 +9,8 @@ services:
       - drone-data:/data
     restart: always
     environment:
-      - DRONE_GITHUB_CLIENT_ID=YOUR_CLIENT_ID
-      - DRONE_GITHUB_CLIENT_SECRET=YOUR_CLIENT_SECRET
+      - DRONE_GITHUB_CLIENT_ID=Ov23liLjGepr2UUFJCkF
+      - DRONE_GITHUB_CLIENT_SECRET=d869157689bd87c9d7115d2e4a73b7892cf953da
       - DRONE_RPC_SECRET=supersecret
       - DRONE_SERVER_HOST=localhost
       - DRONE_SERVER_PROTO=http
